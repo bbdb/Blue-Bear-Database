@@ -2,6 +2,17 @@
 # ######### Icecrown Citadel Loot Template ######### #
 # ################################################## #
 #											// Made by ZOOMIKA
+
+/* STATUS: 80% 
+MISSING: 
+		~ Gunship Battle
+		~ Deathbringer Saurfang
+		~ Valithria Dreamwalker
+		~ Some trash loots
+
+WANT TO...: Rewrite some ChanceOrQuestChances
+*/
+
 -- Lord Marrowgar
 SET @lord10n :=36612;
 SET @lord25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@lord10n);
@@ -12,7 +23,7 @@ SET @lady10n :=36855;
 SET @lady25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@lady10n);
 SET @lady10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@lady10n);
 SET @lady25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@lady10n);
--- Gunship battle
+-- Gunship Battle
 SET @batt10n :=201873;
 -- Deathbringer Saurfang
 SET @saur10n :=37813;
@@ -580,13 +591,64 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@sind25h,49908,11,1,1,1,1,0,0,0), -- Primordial Saronite
 (@sind25h,51026,-5,1,1,1,1,0,0,0), -- Crystalline Essence of Sindragosa
 -- The Lich King(10N)
-(@lich10n,,,1,0,1,1,0,0,0), -- Emblem of Frost
-(@lich10n,,,1,0,1,1,0,0,0), -- Halion, Staff of Forgotten Love
-(@lich10n,,,1,0,1,1,0,0,0), -- Pugius, Fist of Defiance
-(@lich10n,,,1,0,1,1,0,0,0), -- Stormfury, Black Blade of the Betrayer
-(@lich10n,,,1,0,1,1,0,0,0), -- Tainted Twig of Nordrassil
-(@lich10n,,,1,0,1,1,0,0,0), -- Tel'thas, Dagger of the Blood King
-(@lich10n,,,1,0,1,1,0,0,0), -- Troggbane, Axe of the Frostborne King
-(@lich10n,,,1,0,1,1,0,0,0),
-(@lich10n,,,1,0,1,1,0,0,0),
-(@lich10n,,,1,0,1,1,0,0,0),
+(@lich10n,49426,100,1,0,1,1,0,0,0), -- Emblem of Frost
+(@lich10n,51799,8,1,0,1,1,0,0,0), -- Halion, Staff of Forgotten Love
+(@lich10n,51801,5,1,0,1,1,0,0,0), -- Pugius, Fist of Defiance
+(@lich10n,51800,5,1,0,1,1,0,0,0), -- Stormfury, Black Blade of the Betrayer
+(@lich10n,51797,7,1,0,1,1,0,0,0), -- Tainted Twig of Nordrassil
+(@lich10n,51803,7,1,0,1,1,0,0,0), -- Tel'thas, Dagger of the Blood King
+(@lich10n,51795,5,1,0,1,1,0,0,0), -- Troggbane, Axe of the Frostborne King
+(@lich10n,51798,8,1,0,1,1,0,0,0), -- Valius, Gavel of the Lightbringer
+(@lich10n,51796,9,1,0,1,1,0,0,0), -- Warmace of Menethil
+(@lich10n,51802,8,1,0,1,1,0,0,0), -- Windrunner's Heartseeker
+-- The Lich King(10H)
+(@lich10h,52027,31,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
+(@lich10h,49426,100,1,0,1,1,0,0,0), -- Emblem of Frost
+(@lich10h,51943,0.2,1,0,1,1,0,0,0), -- Halion, Staff of Forgotten Love
+(@lich10h,52026,33,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
+(@lich10h,51941,0.1,1,0,1,1,0,0,0), -- Pugius, Fist of Defiance
+(@lich10h,51942,0.2,1,0,1,1,0,0,0), -- Stormfury, Black Blade of the Betrayer
+(@lich10h,51945,0.1,1,0,1,1,0,0,0), -- Tainted Twig of Nordrassil
+(@lich10h,51939,0.1,1,0,1,1,0,0,0), -- Tel'thas, Dagger of the Blood King
+(@lich10h,51947,0.1,1,0,1,1,0,0,0), -- Troggbane, Axe of the Frostborne King
+(@lich10h,51944,0.1,1,0,1,1,0,0,0), -- Valius, Gavel of the Lightbringer
+(@lich10h,52025,40,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
+(@lich10h,51946,0.2,1,0,1,1,0,0,0), -- Warmace of Menethil
+(@lich10h,51940,0.1,1,0,1,1,0,0,0), -- Windrunner's Heartseeker
+(@lich10h,49908,13,1,1,1,1,0,0,0), -- Primordial Saronite
+-- The Lich King(25N)
+(@lich25n,50274,18,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@lich25n,50429,14,1,0,1,1,0,0,0), -- Archus, Greatstaff of Antonidas
+(@lich25n,50427,9,1,0,1,1,0,0,0), -- Bloodsurge, Kel'Thuzad's Blade of Agony
+(@lich25n,52027,31,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
+(@lich25n,49426,100,1,0,1,1,0,0,0), -- Emblem of Frost
+(@lich25n,49981,16,1,0,1,1,0,0,0), -- Fal'inrush Defender of Quel'thalas
+(@lich25n,50070,18,1,0,1,1,0,0,0), -- Glorenzelg, High-Blade of the Silver Hand
+(@lich25n,50012,13,1,0,1,1,0,0,0), -- Havoc's Call, Blade of Lordaeron Kings
+(@lich25n,50426,8,1,0,1,1,0,0,0), -- Heaven's Fall, Kryss of a Thousand Lies
+(@lich25n,49997,9,1,0,1,1,0,0,0), -- Mithrios, Bronzebeard's Legacy
+(@lich25n,50425,13,1,0,1,1,0,0,0), -- Oathbinder, Charge of the Ranger-General
+(@lich25n,52026,33,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
+(@lich25n,50428,14,1,0,1,1,0,0,0), -- Royal Scepter of Terenas II
+(@lich25n,52025,40,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
+(@lich25n,49908,13,1,1,1,1,0,0,0), -- Primordial Saronite
+-- The Lich King(25H)
+(@lich25h,50274,18,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@lich25h,50731,0.2,1,0,1,1,0,0,0), -- Archus, Greatstaff of Antonidas
+(@lich25h,50732,0.1,1,0,1,1,0,0,0), -- Bloodsurge, Kel'Thuzad's Blade of Agony
+(@lich25h,52027,31,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
+(@lich25h,52030,0.2,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification(H)
+(@lich25h,49426,100,1,0,1,1,0,0,0), -- Emblem of Frost
+(@lich25h,50733,0.1,1,0,1,1,0,0,0), -- Fal'inrush Defender of Quel'thalas
+(@lich25h,50730,0.2,1,0,1,1,0,0,0), -- Glorenzelg, High-Blade of the Silver Hand
+(@lich25h,50737,0.2,1,0,1,1,0,0,0), -- Havoc's Call, Blade of Lordaeron Kings
+(@lich25h,50736,0.1,1,0,1,1,0,0,0), -- Heaven's Fall, Kryss of a Thousand Lies
+(@lich25h,50818,0.6,1,0,1,1,0,0,0), -- Invincible's Reins
+(@lich25h,50738,0.1,1,0,1,1,0,0,0), -- Mithrios, Bronzebeard's Legacy
+(@lich25h,50735,0.1,1,0,1,1,0,0,0), -- Oathbinder, Charge of the Ranger-General
+(@lich25h,52026,33,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
+(@lich25h,52029,0.2,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification(H)
+(@lich25h,50734,0.1,1,0,1,1,0,0,0), -- Royal Scepter of Terenas II
+(@lich25h,52025,40,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
+(@lich25h,52028,0.2,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification(H)
+(@lich25h,49908,13,1,1,1,1,0,0,0); -- Primordial Saronite
