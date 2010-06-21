@@ -102,7 +102,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lord10n,50764,18,1,0,1,1,0,0,0), -- Shawl of Nerubian Silk
 (@lord10n,50339,20,1,0,1,1,0,0,0), -- Sliver of Pure Ice
 (@lord10n,49908,1,1,1,1,1,0,0,0), -- Primordial Saronite
--- Lord Marrowgar(10h) (??% drops)
+-- Lord Marrowgar(10h) 
 (@lord10h,51931,14,1,0,1,1,0,0,0), -- Ancient Skeletal Boots
 (@lord10h,51938,14,1,0,1,1,0,0,0), -- Bone Warden's Splitter
 (@lord10h,51937,13,1,0,1,1,0,0,0), -- Bonebreaker Scepter
@@ -134,7 +134,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lord25n,49980,13,1,0,1,1,0,0,0), -- Rusted Bonespike Pauldrons
 (@lord25n,49952,15,1,0,1,1,0,0,0), -- Snowserpent Mail Helm
 (@lord25n,49908,22,1,0,1,1,0,0,0), -- Primordial Saronite
--- Lord Marrowgar(25H) (??% drops)
+-- Lord Marrowgar(25H) 
 (@lord25h,50274,4,1,1,1,1,0,0,0), -- Shadowfrost Shard
 (@lord25h,50604,19,1,0,1,1,0,0,0), -- Band of the Bone Colossus
 (@lord25h,50609,21,1,0,1,1,0,0,0), -- Bone Sentinel's Amulet
@@ -152,6 +152,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lord25h,50617,13,1,0,1,1,0,0,0), -- Rusted Bonespike Pauldrons
 (@lord25h,50605,15,1,0,1,1,0,0,0), -- Snowserpent Mail Helm
 (@lord25h,49908,22,1,1,1,1,0,0,0), -- Primordial Saronite
+
 -- Lady Deathwhisper(10N)
 (@lady10n,50783,13,1,0,1,1,0,0,0), -- Boots of the Frozen Seed
 (@lady10n,50785,12,1,0,1,1,0,0,0), -- Bracers of Dark Blessings
@@ -198,7 +199,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lady25n,49994,21,1,0,1,1,0,0,0), -- The Lady's Brittle Bracers
 (@lady25n,50034,28,1,0,1,1,0,0,0), -- Zod's Repeating Longbow
 (@lady25n,49908,22,1,0,1,1,0,0,0), -- Primordial Saronite
--- Lady Deathwhisper(25H) (??% drops)
+-- Lady Deathwhisper(25H) 
 (@lady25h,50274,-3,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@lady25h,50647,19,1,0,1,1,0,0,0), -- Ahn'kahar Onyx Neckguard
 (@lady25h,50639,19,1,0,1,1,0,0,0), -- Blood-Soaked Saronite Stompers
@@ -216,8 +217,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lady25h,50651,21,1,0,1,1,0,0,0), -- The Lady's Brittle Bracers
 (@lady25h,50638,28,1,0,1,1,0,0,0), -- Zod's Repeating Longbow
 (@lady25h,49908,22,1,1,1,1,0,0,0), -- Primordial Saronite
--- Gunship Battle(chest loot)
--- Deathbringer Saurfang(chest loot)
+
 -- Festergut(10N)
 (@fest10n,50966,27,1,0,1,1,0,0,0), -- Abracadaver
 (@fest10n,50988,12,1,0,1,1,0,0,0), -- Bloodstained Surgeon's Shoulderguards
@@ -232,7 +232,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@fest10n,50812,14,1,0,1,1,0,0,0), -- Taldron's Long Neglected Boots
 (@fest10n,50985,12,1,0,1,1,0,0,0), -- Wrists of Septic Shock
 (@fest10n,49908,1.3,1,1,1,1,0,0,0), -- Primordial Saronite
--- Festergut(10H) (??% drops)
+-- Festergut(10H) 
 (@fest10h,51887,27,1,0,1,1,0,0,0), -- Abracadaver
 (@fest10h,51883,12,1,0,1,1,0,0,0), -- Bloodstained Surgeon's Shoulderguards
 (@fest10h,51888,9,1,0,1,1,0,0,0), -- Cloak of Many Skins
@@ -266,7 +266,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@fest25n,50056,19,1,0,1,1,0,0,0), -- Plaguebringer's Stained Pants
 (@fest25n,50064,15,1,0,1,1,0,0,0), -- Unclean Surgical Gloves
 (@fest25n,49908,22,1,1,1,1,0,0,0), -- Primordial Saronite
--- Festergut(25H) (??% drops)
+-- Festergut(25H) 
 (@fest25h,50274,-7,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@fest25h,50691,11,1,0,1,1,0,0,0), -- Belt of Broken Bones
 (@fest25h,50692,15,1,0,1,1,0,0,0), -- Black Bruise
@@ -286,6 +286,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@fest25h,50694,19,1,0,1,1,0,0,0), -- Plaguebringer's Stained Pants
 (@fest25h,50703,15,1,0,1,1,0,0,0), -- Unclean Surgical Gloves
 (@fest25h,49908,22,1,1,1,1,0,0,0), -- Primordial Saronite
+
 -- Rotface(10N)
 (@rotf10n,51003,13,1,0,1,1,0,0,0), -- Abomination Knuckles
 (@rotf10n,51009,11,1,0,1,1,0,0,0), -- Chestguard of the Failed Experiment
@@ -300,7 +301,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@rotf10n,51066,12,1,0,1,1,0,0,0), -- Shuffling Shoes
 (@rotf10n,51002,14,1,0,1,1,0,0,0), -- Taldron's Short-Sighted Helm
 (@rotf10n,49908,1.6,1,0,1,1,0,0,0), -- Primordial Saronite
--- Rotface(10H) (??% drops)
+-- Rotface(10H) 
 (@rotf10h,51876,13,1,0,1,1,0,0,0), -- Abomination Knuckles
 (@rotf10h,51870,11,1,0,1,1,0,0,0), -- Chestguard of the Failed Experiment
 (@rotf10h,51871,11,1,0,1,1,0,0,0), -- Choker of Filthy Diamonds
@@ -333,7 +334,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@rotf25n,50028,26,1,0,1,1,0,0,0), -- Trauma
 (@rotf25n,50019,17,1,0,1,1,0,0,0), -- Winding Sheet
 (@rotf25n,49908,21,1,1,1,1,0,0,0), -- Primordial Saronite
--- Rotface(25H) (??% drops)
+-- Rotface(25H) 
 (@rotf25h,50274,7,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@rotf25h,50675,17,1,0,1,1,0,0,0), -- Aldriana's Gloves of Secrecy
 (@rotf25h,50682,19,1,0,1,1,0,0,0), -- Bile-Encrusted Medallion
@@ -352,6 +353,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@rotf25h,50685,26,1,0,1,1,0,0,0), -- Trauma
 (@rotf25h,50677,17,1,0,1,1,0,0,0), -- Winding Sheet
 (@rotf25h,49908,21,1,1,1,1,0,0,0), -- Primordial Saronite
+
 -- Professor Putricide(10N)
 (@prof10n,51016,23,1,0,1,1,0,0,0), -- Pendant of Split Veins 
 (@prof10n,51020,17,1,0,1,1,0,0,0), -- Shoulders of Ruinous Senility
@@ -366,7 +368,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prof10n,51018,11,1,0,1,1,0,0,0), -- Chestplate of Septic Stitches
 (@prof10n,51019,11,1,0,1,1,0,0,0), -- Rippling Flesh Kilt
 (@prof10n,49908,1.1,1,1,1,1,0,0,0), -- Primordial Saronite
--- Professor Putricide(10H) (??% drops)
+-- Professor Putricide(10H) 
 (@prof10h,52025,63,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@prof10h,52027,50,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
 (@prof10h,52026,50,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
@@ -394,7 +396,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prof25n,50351,26,1,0,1,1,0,0,0), -- Tiny Abomination in a Jar
 (@prof25n,52025,63,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@prof25n,49908,20,1,1,1,1,0,0,0), -- Primordial Saronite
--- Professor Putricide(25H) (??% drops)
+-- Professor Putricide(25H) 
 (@prof25h,50274,12,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@prof25h,50707,18,1,0,1,1,0,0,0), -- Astrylian's Sutured cinch
 (@prof25h,52027,50,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
@@ -408,6 +410,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prof25h,52025,63,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@prof25h,52028,63,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification(H)
 (@prof25h,49908,20,1,1,1,1,0,0,0), -- Primordial Saronite
+
 -- Prince Valanar(10N)
 (@prin10n,51381,22,1,0,1,1,0,0,0), -- Cerise Coiled Ring
 (@prin10n,51326,22,1,0,1,1,0,0,0), -- Wand of Ruby Claret
@@ -422,7 +425,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prin10n,51383,11,1,0,1,1,0,0,0), -- Spaulders of the Blood Princes
 (@prin10n,51382,11,1,0,1,1,0,0,0), -- Heartsick Mender's Cape
 (@prin10n,49908,2,1,1,1,1,0,0,0), -- Primordial Saronite
--- Prince Valanar(10H) (??% drops)
+-- Prince Valanar(10H) 
 (@prin10h,51849,22,1,0,1,1,0,0,0), -- Cerise Coiled Ring
 (@prin10h,51852,22,1,0,1,1,0,0,0), -- Wand of Ruby Claret
 (@prin10h,51857,20,1,0,1,1,0,0,0), -- Hersir's Greatspear
@@ -454,7 +457,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prin25n,50071,14,1,0,1,1,0,0,0), -- Treads of the Wasteland
 (@prin25n,50170,28,1,0,1,1,0,0,0), -- Valanar's Other Signet Ring
 (@prin25n,49908,19,1,1,1,1,0,0,0), -- Primordial Essence
--- Prince Valanar(25H) (??% drops)
+-- Prince Valanar(25H) 
 (@prin25h,50274,10,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@prin25h,50721,14,1,0,1,1,0,0,0), -- Crypt Keeper's Bracers
 (@prin25h,50603,26,1,0,1,1,0,0,0), -- Cryptmaker
@@ -472,6 +475,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prin25h,50711,14,1,0,1,1,0,0,0), -- Treads of the Wasteland
 (@prin25h,50714,28,1,0,1,1,0,0,0), -- Valanar's Other Signet Ring
 (@prin25h,49908,19,1,1,1,1,0,0,0), -- Primordial Essence
+
 -- Blood Queen Lana'thel(10N)
 (@lana10n,51384,12,1,0,1,1,0,0,0), -- Bloodsipper
 (@lana10n,51551,12,1,0,1,1,0,0,0), -- Chestguard of Siphoned Elements
@@ -486,7 +490,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lana10n,51555,11,1,0,1,1,0,0,0), -- Tightening Waistband
 (@lana10n,51556,11,1,0,1,1,0,0,0), -- Veincrusher Gauntlets
 (@lana10n,49908,4,1,1,1,1,0,0,0), -- Primordial Saronite
--- Blood Queen Lana'thel(10H) (??% drops)
+-- Blood Queen Lana'thel(10H) 
 (@lana10h,51846,12,1,0,1,1,0,0,0), -- Bloodsipper
 (@lana10h,51840,12,1,0,1,1,0,0,0), -- Chestguard of Siphoned Elements
 (@lana10h,51842,11,1,0,1,1,0,0,0), -- Collar of Haughty Disdain
@@ -515,7 +519,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lana25n,52026,50,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
 (@lana25n,52025,64,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@lana25n,49908,19,1,1,1,1,0,0,0), -- Primordial Saronite
--- Blood Queen Lana'thel(25H) (??% drops)
+-- Blood Queen Lana'thel(25H) 
 (@lana25h,50274,-19,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@lana25h,50726,9,1,0,1,1,0,0,0), -- Bauble of True Blood
 (@lana25h,50724,14,1,0,1,1,0,0,0), -- Blood Queen's Crimson Choker
@@ -530,7 +534,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lana25h,52025,64,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@lana25h,52028,64,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification(H)
 (@lana25h,49908,19,1,1,1,1,0,0,0), -- Primordial Saronite
--- Valithria Dreamwalker(chest loot)
+
 -- Sindragosa(10N)
 (@sind10n,51815,1.8,1,0,1,1,0,0,0), -- Bleak Coldarra Carver
 (@sind10n,51782,6,1,0,1,1,0,0,0), -- Etched Dragonbone Girdle
@@ -590,6 +594,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@sind25h,52028,2,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification(H)
 (@sind25h,49908,11,1,1,1,1,0,0,0), -- Primordial Saronite
 (@sind25h,51026,-5,1,1,1,1,0,0,0), -- Crystalline Essence of Sindragosa
+
 -- The Lich King(10N)
 (@lich10n,49426,100,1,0,1,1,0,0,0), -- Emblem of Frost
 (@lich10n,51799,8,1,0,1,1,0,0,0), -- Halion, Staff of Forgotten Love
@@ -652,3 +657,59 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lich25h,52025,40,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@lich25h,52028,0.2,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification(H)
 (@lich25h,49908,13,1,1,1,1,0,0,0); -- Primordial Saronite
+
+/* LOOTID UPDATES */
+
+-- Lord Marrowgar
+UPDATE `creature_template` SET `lootid`=@lord10n WHERE `entry`=@lord10n;
+UPDATE `creature_template` SET `lootid`=@lord10h WHERE `entry`=@lord10h;
+UPDATE `creature_template` SET `lootid`=@lord25n WHERE `entry`=@lord25n;
+UPDATE `creature_template` SET `lootid`=@lord25h WHERE `entry`=@lord25h;
+
+-- Lady Deathwhisper
+UPDATE `creature_template` SET `lootid`=@lady10n WHERE `entry`=@lady10n;
+UPDATE `creature_template` SET `lootid`=@lady10h WHERE `entry`=@lady10h;
+UPDATE `creature_template` SET `lootid`=@lady25n WHERE `entry`=@lady25n;
+UPDATE `creature_template` SET `lootid`=@lady25h WHERE `entry`=@lady25h;
+
+-- Festergut
+UPDATE `creature_template` SET `lootid`=@fest10n WHERE `entry`=@fest10n;
+UPDATE `creature_template` SET `lootid`=@fest10h WHERE `entry`=@fest10h;
+UPDATE `creature_template` SET `lootid`=@fest25n WHERE `entry`=@fest25n;
+UPDATE `creature_template` SET `lootid`=@fest25h WHERE `entry`=@fest25h;
+
+-- Rotface
+UPDATE `creature_template` SET `lootid`=@rotf10n WHERE `entry`=@rotf10n;
+UPDATE `creature_template` SET `lootid`=@rotf10h WHERE `entry`=@rotf10h;
+UPDATE `creature_template` SET `lootid`=@rotf25n WHERE `entry`=@rotf25n;
+UPDATE `creature_template` SET `lootid`=@rotf25h WHERE `entry`=@rotf25h;
+
+-- Professor Putricide
+UPDATE `creature_template` SET `lootid`=@prof10n WHERE `entry`=@prof10n;
+UPDATE `creature_template` SET `lootid`=@prof10h WHERE `entry`=@prof10h;
+UPDATE `creature_template` SET `lootid`=@prof25n WHERE `entry`=@prof25n;
+UPDATE `creature_template` SET `lootid`=@prof25h WHERE `entry`=@prof25h;
+
+-- Blood Prince Council
+UPDATE `creature_template` SET `lootid`=@prin10n WHERE `entry`=@prin10n;
+UPDATE `creature_template` SET `lootid`=@prin10h WHERE `entry`=@prin10h;
+UPDATE `creature_template` SET `lootid`=@prin25n WHERE `entry`=@prin25n;
+UPDATE `creature_template` SET `lootid`=@prin25h WHERE `entry`=@prin25h;
+
+-- Blood-Queen Lana'thel
+UPDATE `creature_template` SET `lootid`=@lana10n WHERE `entry`=@lana10n;
+UPDATE `creature_template` SET `lootid`=@lana10h WHERE `entry`=@lana10h;
+UPDATE `creature_template` SET `lootid`=@lana25n WHERE `entry`=@lana25n;
+UPDATE `creature_template` SET `lootid`=@lana25h WHERE `entry`=@lana25h;
+
+-- Sindragosa
+UPDATE `creature_template` SET `lootid`=@sind10n WHERE `entry`=@sind10n;
+UPDATE `creature_template` SET `lootid`=@sind10h WHERE `entry`=@sind10h;
+UPDATE `creature_template` SET `lootid`=@sind25n WHERE `entry`=@sind25n;
+UPDATE `creature_template` SET `lootid`=@sind25h WHERE `entry`=@sind25h;
+
+-- The Lich King
+UPDATE `creature_template` SET `lootid`=@lich10n WHERE `entry`=@lich10n;
+UPDATE `creature_template` SET `lootid`=@lich10h WHERE `entry`=@lich10h;
+UPDATE `creature_template` SET `lootid`=@lich25n WHERE `entry`=@lich25n;
+UPDATE `creature_template` SET `lootid`=@lich25h WHERE `entry`=@lich25h;
