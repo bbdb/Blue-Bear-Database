@@ -580,3 +580,13 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@sind25h,49908,11,1,1,1,1,0,0,0), -- Primordial Saronite
 (@sind25h,51026,-5,1,1,1,1,0,0,0), -- Crystalline Essence of Sindragosa
 -- The Lich King(10N)
+(@lich10n,,,1,0,1,1,0,0,0), -- Emblem of Frost
+(@lich10n,,,1,0,1,1,0,0,0), -- Halion, Staff of Forgotten Love
+(@lich10n,,,1,0,1,1,0,0,0), -- Pugius, Fist of Defiance
+(@lich10n,,,1,0,1,1,0,0,0), -- Stormfury, Black Blade of the Betrayer
+(@lich10n,,,1,0,1,1,0,0,0), -- Tainted Twig of Nordrassil
+(@lich10n,,,1,0,1,1,0,0,0), -- Tel'thas, Dagger of the Blood King
+(@lich10n,,,1,0,1,1,0,0,0), -- Troggbane, Axe of the Frostborne King
+(@lich10n,,,1,0,1,1,0,0,0),
+(@lich10n,,,1,0,1,1,0,0,0),
+(@lich10n,,,1,0,1,1,0,0,0),
