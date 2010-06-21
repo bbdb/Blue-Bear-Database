@@ -3,14 +3,15 @@
 # ################################################## #
 #											// Made by ZOOMIKA
 
-/* STATUS: 80% 
-MISSING: 
+/* STATUS: 85% 
+MISSING LOOTS: 
 		~ Gunship Battle
 		~ Deathbringer Saurfang
 		~ Valithria Dreamwalker
-		~ Some trash loots
+		~ Trash
 
-WANT TO...: Rewrite some ChanceOrQuestChances
+Anything else works fine :)		
+		
 */
 
 -- Lord Marrowgar
@@ -18,53 +19,49 @@ SET @lord10n :=36612;
 SET @lord25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@lord10n);
 SET @lord10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@lord10n);
 SET @lord25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@lord10n);
+
 -- Lady Deathwhisper
 SET @lady10n :=36855;
 SET @lady25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@lady10n);
 SET @lady10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@lady10n);
 SET @lady25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@lady10n);
--- Gunship Battle
-SET @batt10n :=201873;
--- Deathbringer Saurfang
-SET @saur10n :=37813;
-SET @saur25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@saur10n);
-SET @saur10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@saur10n);
-SET @saur25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@saur10n);
+
 -- Festergut
 SET @fest10n :=36626;
 SET @fest25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@fest10n);
 SET @fest10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@fest10n);
 SET @fest25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@fest10n);
+
 -- Rotface
 SET @rotf10n :=36627;
 SET @rotf25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@rotf10n);
 SET @rotf10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@rotf10n);
 SET @rotf25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@rotf10n);
+
 -- Professor Putricide
 SET @prof10n :=36678;
 SET @prof25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@prof10n);
 SET @prof10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@prof10n);
 SET @prof25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@prof10n);
+
 -- Blood Prince Council (=>Prince Valanar)
 SET @prin10n :=37970;
 SET @prin25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@prin10n);
 SET @prin10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@prin10n);
 SET @prin25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@prin10n);
+
 -- Blood-Queen Lana'thel
 SET @lana10n :=37955;
 SET @lana25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@lana10n);
 SET @lana10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@lana10n);
 SET @lana25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@lana10n);
--- Valithria Dreamwalker
-SET @vali10n :=36789;
-SET @vali25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@vali10n);
-SET @vali10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@vali10n);
-SET @vali25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@vali10n);
+
 -- Sindragosa
 SET @sind10n :=36853;
 SET @sind25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@sind10n);
 SET @sind10h :=(SELECT `difficulty_entry_2` FROM `creature_template` WHERE `entry`=@sind10n);
 SET @sind25h :=(SELECT `difficulty_entry_3` FROM `creature_template` WHERE `entry`=@sind10n);
+
 -- The Lich King
 SET @lich10n :=36597;
 SET @lich25n :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=@lich10n);
@@ -89,163 +86,160 @@ DELETE FROM `creature_loot_template` WHERE `entry` IN (
 
 INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`lootmode`,`groupid`,`mincountOrRef`,`maxcount`,`lootcondition`,`condition_value1`,`condition_value2`) VALUES
 -- Lord Marrowgar(10N)
-(@lord10n,50772,14,1,0,1,1,0,0,0), -- Ancient Skeletal Boots
-(@lord10n,50759,14,1,0,1,1,0,0,0), -- Bone Warden's Splitter
-(@lord10n,50760,13,1,0,1,1,0,0,0), -- Bonebreaker Scepter
-(@lord10n,50761,26,1,0,1,1,0,0,0), -- Citadel Enforcer's Claymore
-(@lord10n,50774,13,1,0,1,1,0,0,0), -- Coldwraith Bracers
-(@lord10n,50773,14,1,0,1,1,0,0,0), -- Cord of the Patronizing Practitioner
-(@lord10n,50775,13,1,0,1,1,0,0,0), -- Corrupted Silverplate Leggings
-(@lord10n,50771,20,1,0,1,1,0,0,0), -- Frost Needle
-(@lord10n,50762,13,1,0,1,1,0,0,0), -- Linked Scourge Vertebrae
-(@lord10n,50763,9,1,0,1,1,0,0,0), -- Marrowgar's Scratching Choker
-(@lord10n,50764,18,1,0,1,1,0,0,0), -- Shawl of Nerubian Silk
-(@lord10n,50339,20,1,0,1,1,0,0,0), -- Sliver of Pure Ice
-(@lord10n,49908,1,1,1,1,1,0,0,0), -- Primordial Saronite
--- Lord Marrowgar(10h) 
-(@lord10h,51931,14,1,0,1,1,0,0,0), -- Ancient Skeletal Boots
-(@lord10h,51938,14,1,0,1,1,0,0,0), -- Bone Warden's Splitter
-(@lord10h,51937,13,1,0,1,1,0,0,0), -- Bonebreaker Scepter
-(@lord10h,51936,26,1,0,1,1,0,0,0), -- Citadel Enforcer's Claymore
-(@lord10h,51929,13,1,0,1,1,0,0,0), -- Coldwraith Bracers
-(@lord10h,51930,14,1,0,1,1,0,0,0), -- Cord of the Patronizing Practitioner
-(@lord10h,51928,13,1,0,1,1,0,0,0), -- Corrupter Silverplate Leggings
-(@lord10h,51932,20,1,0,1,1,0,0,0), -- Frost Needle
-(@lord10h,51935,13,1,0,1,1,0,0,0), -- Linked Scourge Verebrae
-(@lord10h,51934,9,1,0,1,1,0,0,0), -- Marrowgar's Scratching Choker
-(@lord10h,51933,18,1,0,1,1,0,0,0), -- Shawl of Nerubian Silk
-(@lord10h,50346,20,1,0,1,1,0,0,0), -- Sliver of Pure Ice
-(@lord10h,49908,1,1,0,1,1,0,0,0), -- Primordial Saronite
+(@lord10n,50772,8,1,0,1,1,0,0,0), -- Ancient Skeletal Boots
+(@lord10n,50759,8,1,0,1,1,0,0,0), -- Bone Warden's Splitter
+(@lord10n,50760,8,1,0,1,1,0,0,0), -- Bonebreaker Scepter
+(@lord10n,50761,15,1,0,1,1,0,0,0), -- Citadel Enforcer's Claymore
+(@lord10n,50774,7,1,0,1,1,0,0,0), -- Coldwraith Bracers
+(@lord10n,50773,8,1,0,1,1,0,0,0), -- Cord of the Patronizing Practitioner
+(@lord10n,50775,7,1,0,1,1,0,0,0), -- Corrupted Silverplate Leggings
+(@lord10n,50771,12,1,0,1,1,0,0,0), -- Frost Needle
+(@lord10n,50762,7,1,0,1,1,0,0,0), -- Linked Scourge Vertebrae
+(@lord10n,50763,5,1,0,1,1,0,0,0), -- Marrowgar's Scratching Choker
+(@lord10n,50764,10,1,0,1,1,0,0,0), -- Shawl of Nerubian Silk
+(@lord10n,50339,11,1,0,1,1,0,0,0), -- Sliver of Pure Ice
+-- Lord Marrowgar(10H) 
+(@lord10h,51931,0.5,1,0,1,1,0,0,0), -- Ancient Skeletal Boots
+(@lord10h,51938,0.6,1,0,1,1,0,0,0), -- Bone Warden's Splitter
+(@lord10h,51937,0.5,1,0,1,1,0,0,0), -- Bonebreaker Scepter
+(@lord10h,51936,1.1,1,0,1,1,0,0,0), -- Citadel Enforcer's Claymore
+(@lord10h,51929,0.5,1,0,1,1,0,0,0), -- Coldwraith Bracers
+(@lord10h,51930,0.6,1,0,1,1,0,0,0), -- Cord of the Patronizing Practitioner
+(@lord10h,51928,0.6,1,0,1,1,0,0,0), -- Corrupter Silverplate Leggings
+(@lord10h,51932,0.9,1,0,1,1,0,0,0), -- Frost Needle
+(@lord10h,51935,0.6,1,0,1,1,0,0,0), -- Linked Scourge Verebrae
+(@lord10h,51934,0.4,1,0,1,1,0,0,0), -- Marrowgar's Scratching Choker
+(@lord10h,51933,0.8,1,0,1,1,0,0,0), -- Shawl of Nerubian Silk
+(@lord10h,50346,0.9,1,0,1,1,0,0,0), -- Sliver of Pure Ice
+(@lord10h,49908,10,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Lord Marrowgar(25N)
-(@lord25n,50274,-4,1,1,1,1,0,0,0), -- Shadowfrost Shard
-(@lord25n,49949,19,1,0,1,1,0,0,0), -- Band of the Bone Colossus
-(@lord25n,49975,21,1,0,1,1,0,0,0), -- Bone Sentinel's Amulet
-(@lord25n,49960,14,1,0,1,1,0,0,0), -- Bracers of Dark Reckoning
-(@lord25n,50415,29,1,0,1,1,0,0,0), -- Bryntroll, the Bone Arbiter
-(@lord25n,49976,21,1,0,1,1,0,0,0), -- Bulwark of Smouldering Steel
-(@lord25n,49978,20,1,0,1,1,0,0,0), -- Crushing Coldwraith Belt
-(@lord25n,49950,15,1,0,1,1,0,0,0), -- Frostbitten Fur Boots
-(@lord25n,49968,31,1,0,1,1,0,0,0), -- Frozen Bonespike
-(@lord25n,49951,15,1,0,1,1,0,0,0), -- Gendarme's Cuirass
-(@lord25n,49979,14,1,0,1,1,0,0,0), -- Handguards of Winter's Respite
-(@lord25n,49964,14,1,0,1,1,0,0,0), -- Legguards of Lost Hope
-(@lord25n,49977,27,1,0,1,1,0,0,0), -- Loop of the Endless Labyrinth
-(@lord25n,49967,14,1,0,1,1,0,0,0), -- Marrowgar's Frigid Eye
-(@lord25n,49980,13,1,0,1,1,0,0,0), -- Rusted Bonespike Pauldrons
-(@lord25n,49952,15,1,0,1,1,0,0,0), -- Snowserpent Mail Helm
-(@lord25n,49908,22,1,0,1,1,0,0,0), -- Primordial Saronite
+(@lord25n,50274,2,1,1,1,1,0,0,0), -- Shadowfrost Shard
+(@lord25n,49949,8,1,0,1,1,0,0,0), -- Band of the Bone Colossus
+(@lord25n,49975,9,1,0,1,1,0,0,0), -- Bone Sentinel's Amulet
+(@lord25n,49960,6,1,0,1,1,0,0,0), -- Bracers of Dark Reckoning
+(@lord25n,50415,12,1,0,1,1,0,0,0), -- Bryntroll, the Bone Arbiter
+(@lord25n,49976,9,1,0,1,1,0,0,0), -- Bulwark of Smouldering Steel
+(@lord25n,49978,8,1,0,1,1,0,0,0), -- Crushing Coldwraith Belt
+(@lord25n,49950,6,1,0,1,1,0,0,0), -- Frostbitten Fur Boots
+(@lord25n,49968,13,1,0,1,1,0,0,0), -- Frozen Bonespike
+(@lord25n,49951,6,1,0,1,1,0,0,0), -- Gendarme's Cuirass
+(@lord25n,49979,6,1,0,1,1,0,0,0), -- Handguards of Winter's Respite
+(@lord25n,49964,6,1,0,1,1,0,0,0), -- Legguards of Lost Hope
+(@lord25n,49977,11,1,0,1,1,0,0,0), -- Loop of the Endless Labyrinth
+(@lord25n,49967,6,1,0,1,1,0,0,0), -- Marrowgar's Frigid Eye
+(@lord25n,49980,5,1,0,1,1,0,0,0), -- Rusted Bonespike Pauldrons
+(@lord25n,49952,6,1,0,1,1,0,0,0), -- Snowserpent Mail Helm
+(@lord25n,49908,10,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Lord Marrowgar(25H) 
-(@lord25h,50274,4,1,1,1,1,0,0,0), -- Shadowfrost Shard
-(@lord25h,50604,19,1,0,1,1,0,0,0), -- Band of the Bone Colossus
-(@lord25h,50609,21,1,0,1,1,0,0,0), -- Bone Sentinel's Amulet
-(@lord25h,50611,14,1,0,1,1,0,0,0), -- Bracers of Dark Reckoning
-(@lord25h,50709,29,1,0,1,1,0,0,0), -- Bryntroll, the Bone Arbiter
-(@lord25h,50616,21,1,0,1,1,0,0,0), -- Bulwark of Smouldering Steel
-(@lord25h,50613,20,1,0,1,1,0,0,0), -- Crushing Coldwraith Belt
-(@lord25h,50607,15,1,0,1,1,0,0,0), -- Frostbitten Fur Boots
-(@lord25h,50608,31,1,0,1,1,0,0,0), -- Frozen Bonespike
-(@lord25h,50606,15,1,0,1,1,0,0,0), -- Gendarme's Cuirass
-(@lord25h,50615,14,1,0,1,1,0,0,0), -- Handguards of Winter's Respite
-(@lord25h,50612,14,1,0,1,1,0,0,0), -- Legguards of Lost Hope
-(@lord25h,50614,27,1,0,1,1,0,0,0), -- Loop of the Endless Labyrinth
-(@lord25h,50610,14,1,0,1,1,0,0,0), -- Marrowgar's Frigid Eye
-(@lord25h,50617,13,1,0,1,1,0,0,0), -- Rusted Bonespike Pauldrons
-(@lord25h,50605,15,1,0,1,1,0,0,0), -- Snowserpent Mail Helm
-(@lord25h,49908,22,1,1,1,1,0,0,0), -- Primordial Saronite
+(@lord25h,50274,2,1,1,1,1,0,0,0), -- Shadowfrost Shard
+(@lord25h,50604,0.7,1,0,1,1,0,0,0), -- Band of the Bone Colossus
+(@lord25h,50609,0.8,1,0,1,1,0,0,0), -- Bone Sentinel's Amulet
+(@lord25h,50611,0.5,1,0,1,1,0,0,0), -- Bracers of Dark Reckoning
+(@lord25h,50709,1,1,0,1,1,0,0,0), -- Bryntroll, the Bone Arbiter
+(@lord25h,50616,0.8,1,0,1,1,0,0,0), -- Bulwark of Smouldering Steel
+(@lord25h,50613,0.7,1,0,1,1,0,0,0), -- Crushing Coldwraith Belt
+(@lord25h,50607,0.6,1,0,1,1,0,0,0), -- Frostbitten Fur Boots
+(@lord25h,50608,1.1,1,0,1,1,0,0,0), -- Frozen Bonespike
+(@lord25h,50606,0.5,1,0,1,1,0,0,0), -- Gendarme's Cuirass
+(@lord25h,50615,0.5,1,0,1,1,0,0,0), -- Handguards of Winter's Respite
+(@lord25h,50612,0.5,1,0,1,1,0,0,0), -- Legguards of Lost Hope
+(@lord25h,50614,0.9,1,0,1,1,0,0,0), -- Loop of the Endless Labyrinth
+(@lord25h,50610,0.5,1,0,1,1,0,0,0), -- Marrowgar's Frigid Eye
+(@lord25h,50617,0.5,1,0,1,1,0,0,0), -- Rusted Bonespike Pauldrons
+(@lord25h,50605,0.5,1,0,1,1,0,0,0), -- Snowserpent Mail Helm
+(@lord25h,49908,10,1,1,1,1,0,0,0), -- Primordial Saronite
 
 -- Lady Deathwhisper(10N)
-(@lady10n,50783,13,1,0,1,1,0,0,0), -- Boots of the Frozen Seed
-(@lady10n,50785,12,1,0,1,1,0,0,0), -- Bracers of Dark Blessings
-(@lady10n,50780,14,1,0,1,1,0,0,0), -- Chestguard of the Frigid Noose
-(@lady10n,50784,13,1,0,1,1,0,0,0), -- Deathspeaker Disciple's Belt
-(@lady10n,50779,13,1,0,1,1,0,0,0), -- Deathspeaker Zealot's Helm
-(@lady10n,50786,12,1,0,1,1,0,0,0), -- Ghoul Commander's Cuirass
-(@lady10n,50777,14,1,0,1,1,0,0,0), -- Handgrips of Frost and Sleet
-(@lady10n,50776,20,1,0,1,1,0,0,0), -- Njorndar Bone Bow
-(@lady10n,50781,25,1,0,1,1,0,0,0), -- Scourgelord's Baton
-(@lady10n,50782,19,1,0,1,1,0,0,0), -- Sister's Handshrouds
-(@lady10n,50778,14,1,0,1,1,0,0,0), -- Soulthief's Braided Belt
-(@lady10n,50342,18,1,0,1,1,0,0,0), -- Whispering Fanged Skull
-(@lady10n,49908,1,1,1,1,1,0,0,0), -- Primordial Saronite
+(@lady10n,50783,7,1,0,1,1,0,0,0), -- Boots of the Frozen Seed
+(@lady10n,50785,7,1,0,1,1,0,0,0), -- Bracers of Dark Blessings
+(@lady10n,50780,8,1,0,1,1,0,0,0), -- Chestguard of the Frigid Noose
+(@lady10n,50784,7,1,0,1,1,0,0,0), -- Deathspeaker Disciple's Belt
+(@lady10n,50779,8,1,0,1,1,0,0,0), -- Deathspeaker Zealot's Helm
+(@lady10n,50786,7,1,0,1,1,0,0,0), -- Ghoul Commander's Cuirass
+(@lady10n,50777,8,1,0,1,1,0,0,0), -- Handgrips of Frost and Sleet
+(@lady10n,50776,11,1,0,1,1,0,0,0), -- Njorndar Bone Bow
+(@lady10n,50781,14,1,0,1,1,0,0,0), -- Scourgelord's Baton
+(@lady10n,50782,11,1,0,1,1,0,0,0), -- Sister's Handshrouds
+(@lady10n,50778,8,1,0,1,1,0,0,0), -- Soulthief's Braided Belt
+(@lady10n,50342,10,1,0,1,1,0,0,0), -- Whispering Fanged Skull
 -- Lady Deathwhisper(10H)
-(@lady10h,51920,13,1,0,1,1,0,0,0), -- Boots of the Frozen Seed
-(@lady10h,51918,12,1,0,1,1,0,0,0), -- Bracers of Dark Blessings
-(@lady10h,51923,14,1,0,1,1,0,0,0), -- Chestguard of the Frigid Noose
-(@lady10h,51919,13,1,0,1,1,0,0,0), -- Deathspeaker Disciple's Belt
-(@lady10h,51924,13,1,0,1,1,0,0,0), -- Deathspeaker Zealot's Helm
-(@lady10h,51917,12,1,0,1,1,0,0,0), -- Ghoul Commander's Cuirass
-(@lady10h,51926,14,1,0,1,1,0,0,0), -- Handgrips of Frost and Sleet
-(@lady10h,51927,20,1,0,1,1,0,0,0), -- Njorndar Bone Bow
-(@lady10h,51922,25,1,0,1,1,0,0,0), -- Scourgelord's Baton
-(@lady10h,51921,19,1,0,1,1,0,0,0), -- Sister's Handshrouds
-(@lady10h,51925,14,1,0,1,1,0,0,0), -- Soulthief's Braided Belt
-(@lady10h,50343,18,1,0,1,1,0,0,0), -- Whispering Fanged Skull
-(@lady10h,49908,1,1,1,1,1,0,0,0), -- Primordial Saronite
+(@lady10h,51920,0.5,1,0,1,1,0,0,0), -- Boots of the Frozen Seed
+(@lady10h,51918,0.4,1,0,1,1,0,0,0), -- Bracers of Dark Blessings
+(@lady10h,51923,0.5,1,0,1,1,0,0,0), -- Chestguard of the Frigid Noose
+(@lady10h,51919,0.4,1,0,1,1,0,0,0), -- Deathspeaker Disciple's Belt
+(@lady10h,51924,0.5,1,0,1,1,0,0,0), -- Deathspeaker Zealot's Helm
+(@lady10h,51917,0.5,1,0,1,1,0,0,0), -- Ghoul Commander's Cuirass
+(@lady10h,51926,0.5,1,0,1,1,0,0,0), -- Handgrips of Frost and Sleet
+(@lady10h,51927,0.8,1,0,1,1,0,0,0), -- Njorndar Bone Bow
+(@lady10h,51922,0.9,1,0,1,1,0,0,0), -- Scourgelord's Baton
+(@lady10h,51921,0.8,1,0,1,1,0,0,0), -- Sister's Handshrouds
+(@lady10h,51925,0.5,1,0,1,1,0,0,0), -- Soulthief's Braided Belt
+(@lady10h,50343,0.8,1,0,1,1,0,0,0), -- Whispering Fanged Skull
+(@lady10h,49908,10,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Lady Deathwhisper(25N)
-(@lady25n,50274,-3,1,0,1,1,0,0,0), -- Shadowfrost Shard
-(@lady25n,49989,19,1,0,1,1,0,0,0), -- Ahn'kahar Onyx Neckguard
-(@lady25n,49983,19,1,0,1,1,0,0,0), -- Blood-Soaked Saronite Stompers
-(@lady25n,49986,13,1,0,1,1,0,0,0), -- Broken Ram Skull Helm
-(@lady25n,49987,19,1,0,1,1,0,0,0), -- Cultist's Bloodsoaked Spaulders
-(@lady25n,49996,15,1,0,1,1,0,0,0), -- Deathwhisper Raiment
-(@lady25n,49995,14,1,0,1,1,0,0,0), -- Fallen Lord's Handguards
-(@lady25n,49982,19,1,0,1,1,0,0,0), -- Heartpierce
-(@lady25n,49985,12,1,0,1,1,0,0,0), -- Juggernaut Band
-(@lady25n,49988,19,1,0,1,1,0,0,0), -- Leggings of Northern Lights
-(@lady25n,49993,14,1,0,1,1,0,0,0), -- Necrophotic Greaves
-(@lady25n,49992,32,1,0,1,1,0,0,0), -- Nibelung
-(@lady25n,49990,20,1,0,1,1,0,0,0), -- Ring of Maddening Whispers
-(@lady25n,49991,19,1,0,1,1,0,0,0), -- Shoulders of Mercy Killing
-(@lady25n,49994,21,1,0,1,1,0,0,0), -- The Lady's Brittle Bracers
-(@lady25n,50034,28,1,0,1,1,0,0,0), -- Zod's Repeating Longbow
-(@lady25n,49908,22,1,0,1,1,0,0,0), -- Primordial Saronite
+(@lady25n,50274,1.7,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@lady25n,49989,8,1,0,1,1,0,0,0), -- Ahn'kahar Onyx Neckguard
+(@lady25n,49983,8,1,0,1,1,0,0,0), -- Blood-Soaked Saronite Stompers
+(@lady25n,49986,5,1,0,1,1,0,0,0), -- Broken Ram Skull Helm
+(@lady25n,49987,8,1,0,1,1,0,0,0), -- Cultist's Bloodsoaked Spaulders
+(@lady25n,49996,6,1,0,1,1,0,0,0), -- Deathwhisper Raiment
+(@lady25n,49995,6,1,0,1,1,0,0,0), -- Fallen Lord's Handguards
+(@lady25n,49982,8,1,0,1,1,0,0,0), -- Heartpierce
+(@lady25n,49985,5,1,0,1,1,0,0,0), -- Juggernaut Band
+(@lady25n,49988,8,1,0,1,1,0,0,0), -- Leggings of Northern Lights
+(@lady25n,49993,6,1,0,1,1,0,0,0), -- Necrophotic Greaves
+(@lady25n,49992,13,1,0,1,1,0,0,0), -- Nibelung
+(@lady25n,49990,8,1,0,1,1,0,0,0), -- Ring of Maddening Whispers
+(@lady25n,49991,8,1,0,1,1,0,0,0), -- Shoulders of Mercy Killing
+(@lady25n,49994,9,1,0,1,1,0,0,0), -- The Lady's Brittle Bracers
+(@lady25n,50034,12,1,0,1,1,0,0,0), -- Zod's Repeating Longbow
+(@lady25n,49908,10,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Lady Deathwhisper(25H) 
-(@lady25h,50274,-3,1,0,1,1,0,0,0), -- Shadowfrost Shard
-(@lady25h,50647,19,1,0,1,1,0,0,0), -- Ahn'kahar Onyx Neckguard
-(@lady25h,50639,19,1,0,1,1,0,0,0), -- Blood-Soaked Saronite Stompers
-(@lady25h,50640,13,1,0,1,1,0,0,0), -- Broken Ram Skull Helm
-(@lady25h,50646,19,1,0,1,1,0,0,0), -- Cultist's Bloodsoaked Spaulders
-(@lady25h,50649,15,1,0,1,1,0,0,0), -- Deathwhisper Raiment
-(@lady25h,50650,14,1,0,1,1,0,0,0), -- Fallen Lord's Handguards
-(@lady25h,50641,19,1,0,1,1,0,0,0), -- Heartpierce
-(@lady25h,50642,12,1,0,1,1,0,0,0), -- Juggernaut Band
-(@lady25h,50645,19,1,0,1,1,0,0,0), -- Leggings of Northern Lights
-(@lady25h,50652,14,1,0,1,1,0,0,0), -- Necrophotic Greaves
-(@lady25h,50648,32,1,0,1,1,0,0,0), -- Nibelung
-(@lady25h,50644,20,1,0,1,1,0,0,0), -- Ring of Maddening Whispers
-(@lady25h,50643,19,1,0,1,1,0,0,0), -- Shoulders of Mercy Killing
-(@lady25h,50651,21,1,0,1,1,0,0,0), -- The Lady's Brittle Bracers
-(@lady25h,50638,28,1,0,1,1,0,0,0), -- Zod's Repeating Longbow
-(@lady25h,49908,22,1,1,1,1,0,0,0), -- Primordial Saronite
+(@lady25h,50274,1.7,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@lady25h,50647,0.4,1,0,1,1,0,0,0), -- Ahn'kahar Onyx Neckguard
+(@lady25h,50639,0.3,1,0,1,1,0,0,0), -- Blood-Soaked Saronite Stompers
+(@lady25h,50640,0.2,1,0,1,1,0,0,0), -- Broken Ram Skull Helm
+(@lady25h,50646,0.3,1,0,1,1,0,0,0), -- Cultist's Bloodsoaked Spaulders
+(@lady25h,50649,0.3,1,0,1,1,0,0,0), -- Deathwhisper Raiment
+(@lady25h,50650,0.2,1,0,1,1,0,0,0), -- Fallen Lord's Handguards
+(@lady25h,50641,0.4,1,0,1,1,0,0,0), -- Heartpierce
+(@lady25h,50642,0.2,1,0,1,1,0,0,0), -- Juggernaut Band
+(@lady25h,50645,0.3,1,0,1,1,0,0,0), -- Leggings of Northern Lights
+(@lady25h,50652,0.2,1,0,1,1,0,0,0), -- Necrophotic Greaves
+(@lady25h,50648,0.5,1,0,1,1,0,0,0), -- Nibelung
+(@lady25h,50644,0.4,1,0,1,1,0,0,0), -- Ring of Maddening Whispers
+(@lady25h,50643,0.3,1,0,1,1,0,0,0), -- Shoulders of Mercy Killing
+(@lady25h,50651,0.4,1,0,1,1,0,0,0), -- The Lady's Brittle Bracers
+(@lady25h,50638,0.5,1,0,1,1,0,0,0), -- Zod's Repeating Longbow
+(@lady25h,49908,10,1,1,1,1,0,0,0), -- Primordial Saronite
 
 -- Festergut(10N)
-(@fest10n,50966,27,1,0,1,1,0,0,0), -- Abracadaver
-(@fest10n,50988,12,1,0,1,1,0,0,0), -- Bloodstained Surgeon's Shoulderguards
-(@fest10n,50859,9,1,0,1,1,0,0,0), -- Cloak of Many Skins
-(@fest10n,50967,12,1,0,1,1,0,0,0), -- Festergut's Gaseous Gloves
-(@fest10n,50811,14,1,0,1,1,0,0,0), -- Festering Fingerguards
-(@fest10n,50810,21,1,0,1,1,0,0,0), -- Gutbuster
-(@fest10n,50990,18,1,0,1,1,0,0,0), -- Kilt of Untreated Wounds
-(@fest10n,50858,15,1,0,1,1,0,0,0), -- Plague-Soaked Leather Leggings
-(@fest10n,50852,19,1,0,1,1,0,0,0), -- Precious's Putrid Collar
-(@fest10n,50986,12,1,0,1,1,0,0,0), -- Signet of Putrefaction
-(@fest10n,50812,14,1,0,1,1,0,0,0), -- Taldron's Long Neglected Boots
-(@fest10n,50985,12,1,0,1,1,0,0,0), -- Wrists of Septic Shock
-(@fest10n,49908,1.3,1,1,1,1,0,0,0), -- Primordial Saronite
+(@fest10n,50966,,1,0,1,1,0,0,0), -- Abracadaver
+(@fest10n,50988,,1,0,1,1,0,0,0), -- Bloodstained Surgeon's Shoulderguards
+(@fest10n,50859,,1,0,1,1,0,0,0), -- Cloak of Many Skins
+(@fest10n,50967,,1,0,1,1,0,0,0), -- Festergut's Gaseous Gloves
+(@fest10n,50811,,1,0,1,1,0,0,0), -- Festering Fingerguards
+(@fest10n,50810,,1,0,1,1,0,0,0), -- Gutbuster
+(@fest10n,50990,,1,0,1,1,0,0,0), -- Kilt of Untreated Wounds
+(@fest10n,50858,,1,0,1,1,0,0,0), -- Plague-Soaked Leather Leggings
+(@fest10n,50852,,1,0,1,1,0,0,0), -- Precious's Putrid Collar
+(@fest10n,50986,,1,0,1,1,0,0,0), -- Signet of Putrefaction
+(@fest10n,50812,,1,0,1,1,0,0,0), -- Taldron's Long Neglected Boots
+(@fest10n,50985,,1,0,1,1,0,0,0), -- Wrists of Septic Shock
 -- Festergut(10H) 
-(@fest10h,51887,27,1,0,1,1,0,0,0), -- Abracadaver
-(@fest10h,51883,12,1,0,1,1,0,0,0), -- Bloodstained Surgeon's Shoulderguards
-(@fest10h,51888,9,1,0,1,1,0,0,0), -- Cloak of Many Skins
-(@fest10h,51886,12,1,0,1,1,0,0,0), -- Festergut's Gaseous Gloves
-(@fest10h,51892,14,1,0,1,1,0,0,0), -- Festering Fingerguards
-(@fest10h,51893,21,1,0,1,1,0,0,0), -- Gutbuster
-(@fest10h,51882,18,1,0,1,1,0,0,0), -- Kilt of Untreated Wounds
-(@fest10h,51889,15,1,0,1,1,0,0,0), -- Plague-Soaked Leather Leggings
-(@fest10h,51890,19,1,0,1,1,0,0,0), -- Precious's Putrid Collar
-(@fest10h,51884,12,1,0,1,1,0,0,0), -- Signet of Putrefaction
-(@fest10h,51891,14,1,0,1,1,0,0,0), -- Taldron's Long Neglected Boots
-(@fest10h,51885,12,1,0,1,1,0,0,0), -- Wrists of Septic Shock
-(@fest10h,49908,1.3,1,1,1,1,0,0,0), -- Primordial Saronite
+(@fest10h,51887,,1,0,1,1,0,0,0), -- Abracadaver
+(@fest10h,51883,,1,0,1,1,0,0,0), -- Bloodstained Surgeon's Shoulderguards
+(@fest10h,51888,,1,0,1,1,0,0,0), -- Cloak of Many Skins
+(@fest10h,51886,,1,0,1,1,0,0,0), -- Festergut's Gaseous Gloves
+(@fest10h,51892,,1,0,1,1,0,0,0), -- Festering Fingerguards
+(@fest10h,51893,,1,0,1,1,0,0,0), -- Gutbuster
+(@fest10h,51882,,1,0,1,1,0,0,0), -- Kilt of Untreated Wounds
+(@fest10h,51889,,1,0,1,1,0,0,0), -- Plague-Soaked Leather Leggings
+(@fest10h,51890,,1,0,1,1,0,0,0), -- Precious's Putrid Collar
+(@fest10h,51884,,1,0,1,1,0,0,0), -- Signet of Putrefaction
+(@fest10h,51891,,1,0,1,1,0,0,0), -- Taldron's Long Neglected Boots
+(@fest10h,51885,,1,0,1,1,0,0,0), -- Wrists of Septic Shock
+(@fest10h,49908,,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Festergut(25N)
 (@fest25n,50274,7,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@fest25n,50036,11,1,0,1,1,0,0,0), -- Belt of Broken Bones
@@ -300,7 +294,6 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@rotf10n,50998,20,1,0,1,1,0,0,0), -- Shaft of Glacial Ice
 (@rotf10n,51006,12,1,0,1,1,0,0,0), -- Shuffling Shoes
 (@rotf10n,51002,14,1,0,1,1,0,0,0), -- Taldron's Short-Sighted Helm
-(@rotf10n,49908,1.6,1,0,1,1,0,0,0), -- Primordial Saronite
 -- Rotface(10H) 
 (@rotf10h,51876,13,1,0,1,1,0,0,0), -- Abomination Knuckles
 (@rotf10h,51870,11,1,0,1,1,0,0,0), -- Chestguard of the Failed Experiment
@@ -367,7 +360,6 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prof10n,51010,11,1,0,1,1,0,0,0), -- The Facelifter
 (@prof10n,51018,11,1,0,1,1,0,0,0), -- Chestplate of Septic Stitches
 (@prof10n,51019,11,1,0,1,1,0,0,0), -- Rippling Flesh Kilt
-(@prof10n,49908,1.1,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Professor Putricide(10H) 
 (@prof10h,52025,63,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@prof10h,52027,50,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
@@ -424,7 +416,6 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prin10n,51380,11,1,0,1,1,0,0,0), -- Pale Corpse Boots
 (@prin10n,51383,11,1,0,1,1,0,0,0), -- Spaulders of the Blood Princes
 (@prin10n,51382,11,1,0,1,1,0,0,0), -- Heartsick Mender's Cape
-(@prin10n,49908,2,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Prince Valanar(10H) 
 (@prin10h,51849,22,1,0,1,1,0,0,0), -- Cerise Coiled Ring
 (@prin10h,51852,22,1,0,1,1,0,0,0), -- Wand of Ruby Claret
@@ -489,7 +480,6 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lana10n,51386,12,1,0,1,1,0,0,0), -- Throatrender Handguards
 (@lana10n,51555,11,1,0,1,1,0,0,0), -- Tightening Waistband
 (@lana10n,51556,11,1,0,1,1,0,0,0), -- Veincrusher Gauntlets
-(@lana10n,49908,4,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Blood Queen Lana'thel(10H) 
 (@lana10h,51846,12,1,0,1,1,0,0,0), -- Bloodsipper
 (@lana10h,51840,12,1,0,1,1,0,0,0), -- Chestguard of Siphoned Elements
