@@ -298,7 +298,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@rotf10n,51004,26,1,0,1,1,0,0,0), -- Lockjaw
 (@rotf10n,51001,13,1,0,1,1,0,0,0), -- Rotface's Rupturing Ring
 (@rotf10n,50998,20,1,0,1,1,0,0,0), -- Shaft of Glacial Ice
-(@rotf10n,51066,12,1,0,1,1,0,0,0), -- Shuffling Shoes
+(@rotf10n,51006,12,1,0,1,1,0,0,0), -- Shuffling Shoes
 (@rotf10n,51002,14,1,0,1,1,0,0,0), -- Taldron's Short-Sighted Helm
 (@rotf10n,49908,1.6,1,0,1,1,0,0,0), -- Primordial Saronite
 -- Rotface(10H) 
