@@ -124,7 +124,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lord25n,49952,15,1,0,1,1,0,0,0), -- Snowserpent Mail Helm
 (@lord25n,49908,22,1,0,1,1,0,0,0), -- Primordial Saronite
 -- Lord Marrowgar(25H) (??% drops)
-(@lord25h,50274,-4,1,1,1,1,0,0,0), -- Shadowfrost Shard
+(@lord25h,50274,4,1,1,1,1,0,0,0), -- Shadowfrost Shard
 (@lord25h,50604,19,1,0,1,1,0,0,0), -- Band of the Bone Colossus
 (@lord25h,50609,21,1,0,1,1,0,0,0), -- Bone Sentinel's Amulet
 (@lord25h,50611,14,1,0,1,1,0,0,0), -- Bracers of Dark Reckoning
@@ -236,13 +236,13 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@fest10h,51885,12,1,0,1,1,0,0,0), -- Wrists of Septic Shock
 (@fest10h,49908,1.3,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Festergut(25N)
-(@fest25n,50274,-7,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@fest25n,50274,7,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@fest25n,50036,11,1,0,1,1,0,0,0), -- Belt of Broken Bones
 (@fest25n,50035,15,1,0,1,1,0,0,0), -- Black Bruise
 (@fest25n,50038,15,1,0,1,1,0,0,0), -- Carapace of Forgotten Kings
 (@fest25n,50040,27,1,0,1,1,0,0,0), -- Distant Land
 (@fest25n,50060,17,1,0,1,1,0,0,0), -- Faceplate of the Forgotten
-(@fest25n,50226,-96,1,0,1,1,0,0,0), -- FEstergut's Acidic Blood
+(@fest25n,50226,-96,1,0,1,1,0,0,0), -- Festergut's Acidic Blood
 (@fest25n,50037,16,1,0,1,1,0,0,0), -- Fleshrending Gauntlets
 (@fest25n,50042,18,1,0,1,1,0,0,0), -- Gangrenous Leggings
 (@fest25n,50061,16,1,0,1,1,0,0,0), -- Holiday's Grace
@@ -262,7 +262,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@fest25h,50689,15,1,0,1,1,0,0,0), -- Carapace of Forgotten Kings
 (@fest25h,50695,27,1,0,1,1,0,0,0), -- Distant Land
 (@fest25h,50701,17,1,0,1,1,0,0,0), -- Faceplate of the Forgotten
-(@fest25h,50226,-96,1,0,1,1,0,0,0), -- FEstergut's Acidic Blood
+(@fest25h,50226,-96,1,0,1,1,0,0,0), -- Festergut's Acidic Blood
 (@fest25h,50690,16,1,0,1,1,0,0,0), -- Fleshrending Gauntlets
 (@fest25h,50697,18,1,0,1,1,0,0,0), -- Gangrenous Leggings
 (@fest25h,50700,16,1,0,1,1,0,0,0), -- Holiday's Grace
@@ -304,7 +304,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@rotf10h,51877,14,1,0,1,1,0,0,0), -- Taldron's Short-Sighted Helm
 (@rotf10h,49908,1.6,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Rotface(25N)
-(@rotf25n,50274,-7,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@rotf25n,50274,7,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@rotf25n,50021,17,1,0,1,1,0,0,0), -- Aldriana's Gloves of Secrecy
 (@rotf25n,50023,19,1,0,1,1,0,0,0), -- Bile-Encrusted Medallion
 (@rotf25n,50024,13,1,0,1,1,0,0,0), -- Blightborne Warplate
@@ -323,7 +323,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@rotf25n,50019,17,1,0,1,1,0,0,0), -- Winding Sheet
 (@rotf25n,49908,21,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Rotface(25H) (??% drops)
-(@rotf25h,50274,-7,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@rotf25h,50274,7,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@rotf25h,50675,17,1,0,1,1,0,0,0), -- Aldriana's Gloves of Secrecy
 (@rotf25h,50682,19,1,0,1,1,0,0,0), -- Bile-Encrusted Medallion
 (@rotf25h,50681,13,1,0,1,1,0,0,0), -- Blightborne Warplate
@@ -373,7 +373,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prof10h,51860,11,1,0,1,1,0,0,0), -- Rippling Flesh Kilt
 (@prof10h,49908,1.1,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Professor Putricide(25N)
-(@prof25n,50274,-12,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@prof25n,50274,12,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@prof25n,50067,18,1,0,1,1,0,0,0), -- Astrylian's Sutured cinch
 (@prof25n,52027,50,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
 (@prof25n,50179,18,1,0,1,1,0,0,0), -- Last Word
@@ -384,7 +384,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prof25n,52025,63,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@prof25n,49908,20,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Professor Putricide(25H) (??% drops)
-(@prof25h,50274,-12,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@prof25h,50274,12,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@prof25h,50707,18,1,0,1,1,0,0,0), -- Astrylian's Sutured cinch
 (@prof25h,52027,50,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
 (@prof25h,52030,50,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification(H)
@@ -426,7 +426,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prin10h,51848,11,1,0,1,1,0,0,0), -- Heartsick Mender's Cape
 (@prin10h,49908,2,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Prince Valanar(25N)
-(@prin25n,50274,-10,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@prin25n,50274,10,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@prin25n,50175,14,1,0,1,1,0,0,0), -- Crypt Keeper's Bracers
 (@prin25n,49919,26,1,0,1,1,0,0,0), -- Cryptmaker
 (@prin25n,50073,13,1,0,1,1,0,0,0), -- Geistlord's Punishment Sack
@@ -444,7 +444,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@prin25n,50170,28,1,0,1,1,0,0,0), -- Valanar's Other Signet Ring
 (@prin25n,49908,19,1,1,1,1,0,0,0), -- Primordial Essence
 -- Prince Valanar(25H) (??% drops)
-(@prin25h,50274,-10,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@prin25h,50274,10,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@prin25h,50721,14,1,0,1,1,0,0,0), -- Crypt Keeper's Bracers
 (@prin25h,50603,26,1,0,1,1,0,0,0), -- Cryptmaker
 (@prin25h,50713,13,1,0,1,1,0,0,0), -- Geistlord's Punishment Sack
@@ -493,7 +493,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lana10h,51835,11,1,0,1,1,0,0,0), -- Veincrusher Gauntlets
 (@lana10h,49908,4,1,1,1,1,0,0,0), -- Primordial Saronite
 -- Blood Queen Lana'thel(25N)
-(@lana25n,50274,-19,1,0,1,1,0,0,0), -- Shadowfrost Shard
+(@lana25n,50274,19,1,0,1,1,0,0,0), -- Shadowfrost Shard
 (@lana25n,50354,9,1,0,1,1,0,0,0), -- Bauble of True Blood
 (@lana25n,50182,14,1,0,1,1,0,0,0), -- Blood Queen's Crimson Choker
 (@lana25n,50178,13,1,0,1,1,0,0,0), -- Bloodfall
@@ -518,4 +518,65 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 (@lana25h,52029,50,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification(H)
 (@lana25h,52025,64,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
 (@lana25h,52028,64,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification(H)
-(@lana25h,49908,19,1,1,1,1,0,0,0); -- Primordial Saronite
+(@lana25h,49908,19,1,1,1,1,0,0,0), -- Primordial Saronite
+-- Valithria Dreamwalker(chest loot)
+-- Sindragosa(10N)
+(@sind10n,51815,1.8,1,0,1,1,0,0,0), -- Bleak Coldarra Carver
+(@sind10n,51782,6,1,0,1,1,0,0,0), -- Etched Dragonbone Girdle
+(@sind10n,51789,6,1,0,1,1,0,0,0), -- Icicle Shapers
+(@sind10n,51786,6,1,0,1,1,0,0,0), -- Legplates of Aetheric Strife
+(@sind10n,51791,8,1,0,1,1,0,0,0), -- Lost Pavise of the Blue Flight
+(@sind10n,51779,8,1,0,1,1,0,0,0), -- Rimetooth Pendant
+(@sind10n,51790,8,1,0,1,1,0,0,0), -- Robes of Azure Downfall
+(@sind10n,51787,4,1,0,1,1,0,0,0), -- Scourge Fanged Stompers
+(@sind10n,51792,5,1,0,1,1,0,0,0), -- Shoulderguards of Crystalline Bone
+(@sind10n,51784,8,1,0,1,1,0,0,0), -- Splintershard
+(@sind10n,50423,8,1,0,1,1,0,0,0), -- Vambraces of the Frost Wyrm Queen
+(@sind10n,51785,7,1,0,1,1,0,0,0), -- Wyrmwing Treads
+(@sind10n,51026,-5,1,0,1,1,0,0,0), -- Crystalline Essence of Sindragosa
+-- Sindragosa(10H)
+(@sind10h,51815,1.8,1,0,1,1,0,0,0), -- Bleak Coldarra Carver
+(@sind10h,52027,26,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
+(@sind10h,51821,1,1,0,1,1,0,0,0), -- Etched Dragonbone Girdle
+(@sind10h,51814,1,1,0,1,1,0,0,0), -- Icicle Shapers
+(@sind10h,51817,0.9,1,0,1,1,0,0,0), -- Legplates of Aetheric Strife
+(@sind10h,51812,0.9,1,0,1,1,0,0,0), -- Lost Pavise of the Blue Flight
+(@sind10h,52026,26,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
+(@sind10h,51822,1.1,1,0,1,1,0,0,0), -- Rimetooth Pendant
+(@sind10h,51813,0.8,1,0,1,1,0,0,0), -- Robes of Azure Downfall
+(@sind10h,51816,0.5,1,0,1,1,0,0,0), -- Scourge Fanged Stompers
+(@sind10h,51811,0.8,1,0,1,1,0,0,0), -- Shoulderguards of Crystalline Bone
+(@sind10h,51819,0.9,1,0,1,1,0,0,0), -- Splintershard
+(@sind10h,51820,0.8,1,0,1,1,0,0,0), -- Vambraces of the Frost Wyrm Queen
+(@sind10h,52025,35,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
+(@sind10h,51818,1.1,1,0,1,1,0,0,0), -- Wyrmwing Treads
+(@sind10h,49908,11,1,1,1,1,0,0,0), -- Primordial Saronite
+(@sind10h,51026,-5,1,1,1,1,0,0,0), -- Crystalline Essence of Sindragosa
+-- Sindragosa(25N)
+(@sind25n,50274,10,1,1,1,1,0,0,0), -- Shadowfrost Shard
+(@sind25n,52027,26,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
+(@sind25n,50424,7,1,0,1,1,0,0,0), -- Memory of Malygos
+(@sind25n,50360,10,1,0,1,1,0,0,0), -- Phylactery of the Nameless Lich
+(@sind25n,52026,26,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
+(@sind25n,50421,10,1,0,1,1,0,0,0), -- Sindragosa's Cruel Claw
+(@sind25n,50361,6,1,0,1,1,0,0,0), -- Sindragosa's Flawless Fang
+(@sind25n,50423,8,1,0,1,1,0,0,0), -- Sundial of Eternal Dusk
+(@sind25n,52025,35,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
+(@sind25n,49908,11,1,1,1,1,0,0,0), -- Primordial Saronite
+(@sind25n,51026,-5,1,1,1,1,0,0,0), -- Crystalline Essence of Sindragosa
+-- Sindragosa(25H)
+(@sind25h,50274,10,1,1,1,1,0,0,0), -- Shadowfrost Shard
+(@sind25h,52027,26,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification
+(@sind25h,52030,1.8,1,0,1,1,0,0,0), -- Conqueror's Mark of Sanctification(H)
+(@sind25h,50636,1.1,1,0,1,1,0,0,0), -- Memory of Malygos
+(@sind25h,50365,1.1,1,0,1,1,0,0,0), -- Phylactery of the Nameless Lich
+(@sind25h,52026,26,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification
+(@sind25h,52029,1.7,1,0,1,1,0,0,0), -- Protector's Mark of Sanctification(H)
+(@sind25h,50633,1.2,1,0,1,1,0,0,0), -- Sindragosa's Cruel Claw
+(@sind25h,50364,1.2,1,0,1,1,0,0,0), -- Sindragosa's Flawless Fang
+(@sind25h,50635,1,1,0,1,1,0,0,0), -- Sundial of Eternal Dusk
+(@sind25h,52025,35,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification
+(@sind25h,52028,2,1,0,1,1,0,0,0), -- Vanquisher's Mark of Sanctification(H)
+(@sind25h,49908,11,1,1,1,1,0,0,0), -- Primordial Saronite
+(@sind25h,51026,-5,1,1,1,1,0,0,0), -- Crystalline Essence of Sindragosa
+-- The Lich King(10N)
