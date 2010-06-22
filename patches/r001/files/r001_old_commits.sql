@@ -407,7 +407,23 @@ UPDATE `creature_template` SET `lootid`=36892 WHERE `entry`=36892;
 UPDATE `creature_template` SET `lootid`=36893 WHERE `entry`=36893;
 UPDATE `creature_template` SET `lootid`=31260 WHERE `entry`=31260;
 UPDATE `creature_template` SET `lootid`=36840 WHERE `entry`=36840;
+UPDATE `creature_template` SET `lootid`=364940 WHERE `entry`=364940;
+UPDATE `creature_template` SET `lootid`=364760 WHERE `entry`=364760;
+UPDATE `creature_template` SET `lootid`=366580 WHERE `entry`=366580;
 UPDATE `creature_template` SET `lootid`=367880 WHERE `entry`=367880;
+UPDATE `creature_template` SET `lootid`=377120 WHERE `entry`=377120;
+UPDATE `creature_template` SET `lootid`=377130 WHERE `entry`=377130;
+UPDATE `creature_template` SET `lootid`=368860 WHERE `entry`=368860;
+UPDATE `creature_template` SET `lootid`=377110 WHERE `entry`=377110;
+UPDATE `creature_template` SET `lootid`=368790 WHERE `entry`=368790;
+UPDATE `creature_template` SET `lootid`=368810 WHERE `entry`=368810;
+UPDATE `creature_template` SET `lootid`=368960 WHERE `entry`=368960;
+UPDATE `creature_template` SET `lootid`=368420 WHERE `entry`=368420;
+UPDATE `creature_template` SET `lootid`=368300 WHERE `entry`=368300;
+UPDATE `creature_template` SET `lootid`=368920 WHERE `entry`=368920;
+UPDATE `creature_template` SET `lootid`=368930 WHERE `entry`=368930;
+UPDATE `creature_template` SET `lootid`=312600 WHERE `entry`=312600;
+UPDATE `creature_template` SET `lootid`=368400 WHERE `entry`=368400;
 
 
 -- Mechanic immunes
