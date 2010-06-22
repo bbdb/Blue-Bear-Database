@@ -1,5 +1,0 @@
-# ~ RUN 	"8312_to_8375_worldpatch.sql" 		ON WORLD DATABASE 
-# ~ RUN 	"old_commits.sql" 					ON WORLD DATABASE 
-# ~ RUN 	"001_creature_template.sql" 		ON WORLD DATABASE 
-# ~ RUN 	"001_item_template.sql" 			ON WORLD DATABASE 
-# ~ RUN 	"full_icc_boss_loot_support.sql" 	ON WORLD DATABASE 
