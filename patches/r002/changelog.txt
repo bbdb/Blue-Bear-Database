@@ -1,4 +1,12 @@
 CHANGELOG r002
 ======================================================
 BBDB COMMENT:
+	~ Many minor fixes eg.  
+		~ in creature table
+		~ in creature_template table
+		~ in creature_loot_template table
+		~ in item_template table
+		~ in gameobject table
+		~ in quest_template table
+	~ Updated Instance (Culling of Stratholme)
 ======================================================
