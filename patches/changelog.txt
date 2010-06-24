@@ -3,28 +3,28 @@
 +--------------------+
 | Blue-Bear-Database |
 +-- r003 ------------+--------------------- commiter: zoomika ------+
-|	BBDB COMMENT:                                                   |
-|	  ~ Work with Vault of Archavon                                 |
-|		~ loots                                                     |
-|		~ templates                                                 |
-|		~ spawns(10N,25N)                                           |
-|		~ waypoints                                                 |
+|	BBDB COMMENT:                                                |
+|	  ~ Work with Vault of Archavon                              |
+|		~ loots                                              |
+|		~ templates                                          |
+|		~ spawns(10N,25N)                                    |
+|		~ waypoints                                          |
 +-- r002 ---------------------------------- commiter: zoomika ------+
-|	BBDB COMMENT:                                                   |
-|	  ~ Minor fixes:                                                |
-|	  	~ in creature table                                         |
-|		~ in creature_template table                                |
-|		~ in creature_loot_template table                           |
-|		~ in item_template table                                    |
-|		~ in gameobject table                                       |
-|		~ in quest_template table                                   |
-|	  ~ Updated Instance (Culling of Stratholme)                    |
+|	BBDB COMMENT:                                                |
+|	  ~ Minor fixes:                                             |
+|	  	~ in creature table                                  |
+|		~ in creature_template table                         |
+|		~ in creature_loot_template table                    |
+|		~ in item_template table                             |
+|		~ in gameobject table                                |
+|		~ in quest_template table                            |
+|	  ~ Updated Instance (Culling of Stratholme)                 |
 +-- r001 ---------------------------------- commiter: zoomika ------+
 |  BBDB COMMENT:                                                    |
-|	  ~ Update Core Rev.8312 to 8375                                |
-|	  ~ Merge Old Commits from DDB (Thx to Sensey + Zoomika)        |
-|	  ~ Import some missing items (Count:11)                        |
-|	  ~ Import new creatures for difficulty_entrys                  |
-|	  ~ Add ICC_BOSS_LOOT (Status:85% - Missing Chest Loots)        |
-|	  ~ Update Version (Fixed DB error)                             |
+|	  ~ Update Core Rev.8312 to 8375                             |
+|	  ~ Merge Old Commits from DDB (Thx to Sensey + Zoomika)     |
+|	  ~ Import some missing items (Count:11)                     |
+|	  ~ Import new creatures for difficulty_entrys               |
+|	  ~ Add ICC_BOSS_LOOT (Status:85% - Missing Chest Loots)     |
+|	  ~ Update Version (Fixed DB error)                          |
 +-------------------------------------------------------------------+
