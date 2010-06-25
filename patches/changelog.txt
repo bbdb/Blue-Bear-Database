@@ -5,8 +5,9 @@
 +-- r0004 -----------+---------------------- zoomika ----------------
 |	                                             
 |	  ~ Missing Emblem of Triumph Drop in Vault of Archavon
-|       ~ Great Herb and Mineral spawn packet ~ Very Great Thx Sensey
+|	  ~ Great Herb and Mineral spawn packet ~ Very Great Thx Sensey
 |       	~ 22052 Herbs/24573 Minerals
+|		~ (r0004/files/herbs/ + r0004/files/minerals/)
 |
 +-- r0003 ---------------------------------- zoomika ----------------
 |                                               
