@@ -3,4 +3,4 @@
 ################ */
 
 -- Version
-UPDATE `version` SET `db_version`='BBDB_8375_0005';
+UPDATE `version` SET `db_version`='BBDB_8791_0005';
