@@ -2,14 +2,21 @@
 |   BBDB CHANGELOG   |
 +--------------------+
 | Blue-Bear-Database |
-+-- r0004 -----------+---------------------- zoomika ----------------
++-- r0005 -----------+---------------------- zoomika -------- 3 lns --
+|
+|         ~ Import from TDB: 
+|             ~ 31_02_procedures_world.sql
+|             ~ 31_03_updatepack_world.sql
+|
+|
++-- r0004 ---------------------------------- zoomika -------- 4 lns --
 |	                                             
 |	  ~ Missing Emblem of Triumph Drop in Vault of Archavon
 |	  ~ Great Herb and Mineral spawn packet ~ Very Great Thx Sensey
 |       	~ 22052 Herbs/24573 Minerals
 |		~ (r0004/files/herbs/ + r0004/files/minerals/)
 |
-+-- r0003 ---------------------------------- zoomika ----------------
++-- r0003 ---------------------------------- zoomika -------- 6 lns --
 |                                               
 |	  ~ Work with Vault of Archavon                       
 |		~ loots                                              
@@ -18,7 +25,7 @@
 |		~ waypoints                                          
 |		~ health corrections                                 
 |
-+-- r0002 ---------------------------------- zoomika ----------------   
++-- r0002 ---------------------------------- zoomika -------- 8 lns --   
 |
 |	  ~ Minor fixes:                                             
 |	  	~ in creature table                                  
@@ -29,7 +36,7 @@
 |		~ in quest_template table                            
 |	  ~ Updated Instance (Culling of Stratholme)               
 |
-+-- r0001 ---------------------------------- zoomika ----------------                                                  
++-- r0001 ---------------------------------- zoomika -------- 6 lns --                                                  
 |
 |	  ~ Update Core Rev.8312 to 8375                             
 |	  ~ Merge Old Commits from DDB (Thx to Sensey + Zoomika)     
@@ -39,4 +46,3 @@
 |	  ~ Update Version (Fixed DB error)                          
 |
 +--------------------------------------------------------------------
-Return Value: 0
