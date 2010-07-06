@@ -752,7 +752,7 @@ struct npc_harvest_reaperAI : public ScriptedAI
 
 };
 
-CreatureAI* GetAI_npc_harvest_reaperAI(Creature *pCreature)
+CreatureAI* GetAI_npc_harvest_reaper(Creature *pCreature)
 {
 	return new npc_harvest_reaperAI(pCreature);
 }
