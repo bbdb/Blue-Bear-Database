@@ -35,7 +35,8 @@ enum eSpells
 	SPELL_THRASH	= 3391,		// Thrash
 	SPELL_DEFENS	= 7164,		// Defensive Stance
 	SPELL_CHARGE	= 6268,		// Rushing Charge
-	SPELL_WIDES	= 7342,		// Wide Slash 
+	SPELL_WIDES	= 7342,		// Wide Slash
+	SPELL_SNAPKCK	= 8646,		// Snap Kick 
 };
 
 #endif
