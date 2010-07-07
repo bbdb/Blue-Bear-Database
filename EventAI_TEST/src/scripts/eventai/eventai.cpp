@@ -757,6 +757,96 @@ CreatureAI* GetAI_npc_harvest_reaper(Creature *pCreature)
 	return new npc_harvest_reaperAI(pCreature);
 }
 
+/* ####################
+## npc_defias_bandit ##
+#################### */
+
+struct npc_defias_banditAI : public ScriptedAI
+{
+	npc_defias_banditAI(Creature *c) : ScriptedAI(c) {Reset();}
+
+	uint32 SnapKickTimer;
+
+	void Reset()
+	{
+		SnapKickTimer = 4000;
+	}
+
+	void EnterCombat(Unit *pWho)
+	{
+		DoScriptText(RAND(SAY_DEFIAS1,SAY_DEFIAS2,SAY_DEFIAS3), me, pWho);
+	}
+
+	void UpdateAI(const uint32 diff)
+	{
+		if(!UpdateVictim())
+			return;
+		
+		if(SnapKickTimer < diff)
+		{
+			DoCast(me->getVictim(), SPELL_SNAPKCK);
+			SnapKickTimer = urand(5000,9000);
+		}else SnapKickTimer -=diff;
+
+		DoMeleeAttackIfReady();
+	}
+
+};
+
+CreatureAI* GetAI_npc_defias_bandit(Creature *pCreature)
+{
+	return new npc_defias_banditAI(pCreature);
+}
+
+/* #####################
+## npc_riverpaw_gnoll ##
+##################### */
+
+struct npc_riverpaw_gnollAI : public ScriptedAI
+{
+	npc_riverpaw_gnollAI(Creature *c) : ScriptedAI(c) {Reset();}
+	
+	uint32 phase;
+
+	void Reset()
+	{
+		phase = 1;
+	}
+
+	void EnterCombat(Unit *pWho)
+	{
+		if(phase == 1)
+		{
+			DoScriptText(RAND(SAY_RIVER1,SAY_RIVER2), me, pWho);
+		}
+		
+		if(phase == 2)
+		{
+			me->DoFleeToGetAssistance();
+			DoScriptText(SAY_FLEE, me, pWho);
+		}		
+
+	}
+
+	void UpdateAI(const uint32 diff)
+	{
+		if(!UpdateVictim)
+			return;
+		
+		if(phase == 1 && HealthBelowPct(15)){
+			phase = 2;
+		}
+
+		DoMeleeAttackIfReady;
+	}		
+
+};
+
+CreatureAI* GetAI_npc_riverpaw_gnoll(Creature *pCreature)
+{
+	return new npc_riverpaw_gnollAI(pCreature);
+}
+
 void AddSC_eventai()
 {
 	Script *newscript;
@@ -854,5 +944,15 @@ void AddSC_eventai()
 	newscript = new Script;
 	newscript->Name="npc_harvest_reaper";
 	newscript->GetAI = &GetAI_npc_harvest_reaper;
+	newscript->RegisterSelf();
+
+	newscript = new Script;
+	newscript->Name="npc_defias_bandit";
+	newscript->GetAI = &GetAI_npc_defias_bandit;
+	newscript->RegisterSelf();
+
+	newscript = new Script;
+	newscript->Name="npc_riverpaw_gnoll";
+	newscript->GetAI = &GetAI_npc_riverpaw_gnoll;
 	newscript->RegisterSelf();
 }
