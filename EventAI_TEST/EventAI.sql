@@ -110,3 +110,13 @@ DELETE FROM `creature_ai_scripts` WHERE `creature_id`=113;
 UPDATE `creature_template` SET `AIName`='',`ScriptName`='npc_harvest_reaper' WHERE `entry`=115;
 
 DELETE FROM `creature_ai_scripts` WHERE `creature_id`=115;
+
+-- npc_defias_bandit
+UPDATE `creature_template` SET `AIName`='',`ScriptName`='npc_defias_bandit' WHERE `entry`=116;
+
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=116;
+
+-- npc_riverpaw_gnoll
+UPDATE `creature_template` SET `AIName`='',`ScriptName`='npc_riverpaw_gnoll' WHERE `entry`=117;
+
+DELETE FROM `creature_ai_scripts` WHERE `creature_id`=117;
