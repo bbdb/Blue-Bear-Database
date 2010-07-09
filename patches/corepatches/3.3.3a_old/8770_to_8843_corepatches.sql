@@ -1,7 +1,7 @@
--- 8770_world_areatrigger_scripts.sql
-INSERT INTO areatrigger_scripts VALUES
-(5369,'at_RX_214_repair_o_matic_station'),
-(5423,'at_RX_214_repair_o_matic_station');
+DELETE FROM `areatrigger_scripts` WHERE `entry` IN (5369,5423);
+INSERT INTO `areatrigger_scripts` (`entry`,`ScriptName`) VALUES
+(5369, 'at_RX_214_repair_o_matic_station'),
+(5423, 'at_RX_214_repair_o_matic_station');
 
 -- 8770_world_scriptname.sql
 UPDATE `creature_template` SET `ScriptName` = 'npc_thorims_hammer' WHERE `entry` =33365;
@@ -19,6 +19,7 @@ UPDATE `gameobject_template` SET `ScriptName` = 'go_ulduar_tower' WHERE `entry` 
 
 -- 8770_world_script_waypoints.sql
 -- waypoint for mimron inferno
+DELETE FROM `script_waypoint` WHERE `entry`=33370;
 INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `location_z`, `waittime`, `point_comment`) VALUES
 (33370, 1, 331.674, -68.6878, 409.804, 0, '0'),
 (33370, 2, 274.578, -92.1829, 409.804, 0, '0'),
@@ -26,9 +27,6 @@ INSERT INTO `script_waypoint` (`entry`, `pointid`, `location_x`, `location_y`, `
 (33370, 4, 206.092, -34.7447, 409.801, 0, '0'),
 (33370, 5, 240.208, 1.10346, 409.802, 0, '0'),
 (33370, 6, 337.199, 11.7051, 409.802, 0, '0');
-
--- 8790_world_locales_item_set_names.sql
-RENAME TABLE `locales_item_set_name` TO `locales_item_set_names`;
 
 -- 8816_world_spell_bonus_data.sql
 DELETE FROM `spell_bonus_data` WHERE `entry` IN (45284,45297);
