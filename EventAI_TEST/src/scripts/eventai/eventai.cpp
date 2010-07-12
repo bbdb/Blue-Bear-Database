@@ -50,7 +50,7 @@ struct npc_defias_thugAI : public ScriptedAI
 	
 	void EnterCombat(Unit *pWho)
 	{
-		DoScriptText(RAND(SAY_DEFIAS1,SAY_DEFIAS2,SAY_DEFIAS3), me, pWho); break;
+		DoScriptText(RAND(SAY_DEFIAS1,SAY_DEFIAS2,SAY_DEFIAS3), me, pWho);
 	}
 };
 
@@ -76,7 +76,7 @@ struct npc_kobold_minerAI : public ScriptedAI
 	
 	void EnterCombat(Unit *pWho)
 	{
-		DoScriptText(SAY_VERMIN1, me, pWho); break;
+		DoScriptText(SAY_VERMIN1, me, pWho);
 	}
 	
 	void UpdateAI(const uint32 diff)
@@ -262,7 +262,7 @@ struct npc_thurosAI : public ScriptedAI
 
 	void EnterCombat(Unit *pWho)
 	{
-		DoScriptText(RAND(SAY_DEFIAS1,SAY_DEFIAS2,SAY_DEFIAS3), me, pWho); break;
+		DoScriptText(RAND(SAY_DEFIAS1,SAY_DEFIAS2,SAY_DEFIAS3), me, pWho);
 	}
 };
 
@@ -398,7 +398,7 @@ struct npc_defias_smugglerAI : public ScriptedAI
 			DoScriptText(SAY_FLEE, me, pWho);
 		}
 		
-		DoScriptText(RAND(SAY_DEFIAS1,SAY_DEFIAS2,SAY_DEFIAS3), me, pWho); break;
+		DoScriptText(RAND(SAY_DEFIAS1,SAY_DEFIAS2,SAY_DEFIAS3), me, pWho);
 	}
 	
 	void UpdateAI(const uint32 diff)
@@ -460,7 +460,7 @@ struct npc_riverpaw_runtAI : public ScriptedAI
 			DoScriptText(SAY_FLEE, me, pWho);
 		}
 		
-		DoScriptText(RAND(SAY_RIVER1,SAY_RIVER2), me, pWho); break;
+		DoScriptText(RAND(SAY_RIVER1,SAY_RIVER2), me, pWho);
 		
 		if (phase == 2)
 		{
@@ -519,7 +519,7 @@ struct npc_riverpaw_taskmasterAI : public ScriptedAI
 			DoScriptText(SAY_FLEE, me, pWho);
 		}
 		
-		DoScriptText(RAND(SAY_RIVER1,SAY_RIVER2), me, pWho); break;
+		DoScriptText(RAND(SAY_RIVER1,SAY_RIVER2), me, pWho);
 	}
 	
 	void UpdateAI(const uint32 diff)
