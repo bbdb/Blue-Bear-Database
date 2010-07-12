@@ -1264,4 +1264,4 @@ DELETE FROM `reference_loot_template` WHERE `entry`=34097;
 ################ */
 
 -- Version
-UPDATE `version` SET `db_version`='BBDB_8375_003';
+UPDATE `version` SET `db_version`='BBDB_8375_0003';

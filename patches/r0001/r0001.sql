@@ -130,9 +130,9 @@ INSERT INTO `spell_proc_event` (`entry`, `SchoolMask`, `SpellFamilyName`, `Spell
 ( 67670, 0x00,   0, 0x00000000, 0x00000000, 0x00000000, 0x00010000, 0x00000000,   0,   0,  45), -- Item - Coliseum Caster Trinket 5men
 ( 67653, 0x00,   0, 0x00000000, 0x00000000, 0x00000000, 0x00400028, 0x00000000,   0,   0,  45); -- Item - Coliseum Tank Trinket 5men
 
-/* ####################
-### old_commits.sql ###
-#################### */
+/* #########################
+### 0001_old_commits.sql ###
+######################### */
 
 -- Merge DreamDB fixes from me
 SET @stormH :=(SELECT `difficulty_entry_1` FROM `creature_template` WHERE `entry`=27983); -- Dark Rune Stormcaller
@@ -1340,16 +1340,17 @@ INSERT INTO `npc_trainer` (`entry`,`spell`,`spellcost`,`reqskill`,`reqskillvalue
 (31247,34091,50000000,762,225,70),
 (31247,54197,10000000,762,225,77);
 
-/* ####################
-### 001_version.sql ###
-#################### */
+/* #####################
+### 0001_version.sql ###
+##################### */
 
 -- Bug at Core Starting
 ALTER TABLE `version` CHANGE COLUMN `core_revision` `core_revision` varchar(20);
+UPDATE `version` SET `db_version`='BBDB_8375_0001';
 
-/* ##########################
-### 001_item_template.sql ###
-########################## */
+/* ###########################
+### 0001_item_template.sql ###
+########################### */
 
 /*
 BBDB COMMENT:
@@ -1383,7 +1384,7 @@ INSERT INTO `item_template` (`entry`, `class`, `subclass`, `unk0`, `name`, `disp
 (51947, 2, 0, -1, 'Troggbane, Axe of the Frostborne King', 64485, 4, 8, 0, 1, 1283461, 256692, 13, -1, -1, 271, 80, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 5, 4, 66, 7, 111, 12, 36, 14, 39, 13, 32, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 267, 498, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1600, 0, 0, 0, 1, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 1, '', 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 105, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 104, 0, 375, 0, 0, 0, 0, '', 0, 0, 0, 0, 11723);
 
 /* ##############################
-### 001_creature_template.sql ###
+### 0001_creature_template.sql ###
 ############################## */
 
 /* 
@@ -1415,9 +1416,9 @@ INSERT INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_entr
 (@lich25h, 0, 0, 0, 0, 0, 30721, 0, 0, 0, 'The Lich King (3)', '', '', 0, 83, 83, 2, 35, 35, 0, 1, 1.14286, 1, 3, 509, 683, 0, 805, 70, 0, 0, 1, 0, 8, 0, 0, 0, 0, 0, 371, 535, 135, 6, 36, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 3, 2000, 500, 1, 0, 0, 0, 0, 0, 0, 0, 151, 1, 0, 0, 0, '', 1);
 UPDATE `creature_template` SET `difficulty_entry_1`=@lich25n,`difficulty_entry_2`=@lich10h,`difficulty_entry_3`=@lich25h WHERE `entry`=36597;
 
-/* ##################################
-### 001_icc_boss_loot_support.sql ###
-################################## */
+/* ###################################
+### 0001_icc_boss_loot_support.sql ###
+################################### */
 
 # ################################################## #
 # ######### Icecrown Citadel Loot Template ######### #
