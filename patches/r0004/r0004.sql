@@ -46,7 +46,7 @@ INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`loot
 
 /* #######################
 ### mineral_spawns.sql ###
-##########################
+####################### */
 
 -- In other files (./files/mineral/r0004_mineral_spawns_prt1.sql-..._prt5.sql) // kicsit nagy terheles a MySQL szerverre
 
