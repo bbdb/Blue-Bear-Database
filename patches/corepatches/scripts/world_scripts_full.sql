@@ -1644,5 +1644,5 @@ INSERT INTO areatrigger_scripts VALUES
 -- moved from world_spell_full.sql to here
 update creature_template set AIName='TurretAI',scriptname='' where entry=33139;
 update creature_template set ScriptName='boss_kologarn' where entry=32930;
-update creature_template set scriptname="boss_flame_leviathan_safety_container" where entry=33218;
+update creature_template set scriptname='boss_flame_leviathan_safety_container' where entry=33218;
 
