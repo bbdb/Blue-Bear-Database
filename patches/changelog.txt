@@ -2,7 +2,14 @@
 |   BBDB CHANGELOG   |
 +--------------------+
 | Blue-Bear-Database |
-+-- r0006 -----------+---------------------- zoomika -------- 2 lns --
++-- r0007 -----------+---------------------- zoomika -------- 4 lns --
+|         
+|         ~ Add the following items to the folder:
+|              ~ 32_02_procedures_world.sql 
+|              ~ 32_03_updatepack_world.sql
+|         ~ BBDB Comment: // 1. 32_02_procedures_world.sql, 2. 32_03_updatepack_world.sql, 3. r0007.sql
+|
++-- r0006 ---------------------------------- zoomika -------- 2 lns --
 |
 |         ~ full_db
 |         ~ corepatches updated
