@@ -1607,6 +1607,7 @@ UPDATE `creature_template` SET `ScriptName`='npc_weegli_blastfuse' WHERE `entry`
 UPDATE `gameobject_template` SET `ScriptName`='go_shallow_grave' WHERE `entry` IN (128308,128403);
 INSERT IGNORE INTO `areatrigger_scripts` (`entry`,`ScriptName`) VALUES(962, 'at_zumrah');
 UPDATE `gameobject_template` SET `ScriptName`='go_table_theka' WHERE `entry`=142715;
+UPDATE `gameobject_template` SET `ScriptName`='go_troll_cage' WHERE `entry`>= 141070 AND `entry`< 141075;
 UPDATE `instance_template` SET `script`='instance_zulfarrak' WHERE `map`=209;
 
 /* ZUL'GURUB */
@@ -1644,5 +1645,4 @@ INSERT INTO areatrigger_scripts VALUES
 -- moved from world_spell_full.sql to here
 update creature_template set AIName='TurretAI',scriptname='' where entry=33139;
 update creature_template set ScriptName='boss_kologarn' where entry=32930;
-update creature_template set scriptname='boss_flame_leviathan_safety_container' where entry=33218;
-
+update creature_template set scriptname="boss_flame_leviathan_safety_container" where entry=33218;
