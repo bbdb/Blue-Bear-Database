@@ -1,4 +1,11 @@
 ------------------------------------------------------------------------
+r0013 | zoomika | 2010-07-30 19:51 | 4 lines
+
+Cleanup:
+ * [UNUSED] Trainers
+ * Tournament Test Realm Trainers
+ * Not needed in blizzlike Databases...
+------------------------------------------------------------------------
 r0012 | zoomika | 2010-07-30 19:28 | 1 line
 
 Fix typo in prev commit
